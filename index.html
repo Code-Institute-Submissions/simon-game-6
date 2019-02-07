@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    
+    <title>Simon Game</title>
+        <link rel="stylesheet" href="assests/style.css" type="text/css"/>
+        
+        <!--- link to CSS page-->
+       
+</head>
+<body>
+    
+ 
+   <!-- Modal-->
+   <button type="button" class="glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#myModal"></button>
+ 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h2 class="modal-title" id="myModalLabel" >Simon Game</h2>
+      </div>
+      <div class="modal-body">
+       <h3><b>Instructions</b></h3><br />
+       This Simon game is a memory game where the computer will flash a colour and you have to click on the correct colour to move on to the next level. They are two modes, medium and hard. (See below for instructions on each mode.) 
+       <h4><b>Medium</b></h4><br />
+       <p>In this mode you get 2 lives before game over. Each level will carry on the sequence from the level before. When the coloured button flashes, click on the correct coloured button to move on. As the levels get higher, the game gets harder. </p>
+       <h4><b>Hard</b></h4><br />
+       <p>For the hard mode you only have 1 life before it's game over. Like the medium mode, you must copy the sequence to move on to the next level. However for this mode, the coloured buttons will change positions. When the coloured buttons change positions you must follow and click on the correct button to move on to the next level!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button2" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--- big circle (gameboard)-->
+
+ <div id="big" class="col-sm-3 col-md-6 col-lg-12 circle  big">
+     
+<!--- control buttons -->
+                <div id="controls" class="controls ">
+                <div class="title">SIMON</div>
+                <div class="heading">COUNTER</div>
+                <div class="display" align="center" id="show-rounds">00</div>
+                <div class="start-btn" id="start">START</div>
+                <div class="hard-btn" id="mode">MODE</div>
+                <div class="reset-btn" id="reset">RESET</div>
+               </div>
+                 <!---coloured buttons for sequence -->
+                <div class="container">
+                
+                <div id="green" class="circle green button"></div>
+                <div id="purple" class="circle purple button"></div>
+                <div id="yellow" class="circle yellow button"></div>
+                <div id="orange" class="circle orange button"></div>
+                <div id="blue" class="circle blue button"></div>
+                <div id="pink" class="circle pink button"></div>
+                 </div>
+                </div>
+                   
+       <!--- link to jquery -->         
+               <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+                    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  
+    <!--- link to java script page-->
+            <script src="java.js"></script>
+         
+<!-- link too bootsrap-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<!-- footer --->
+
+<footer class="container-fluid ">
+    <div class="row footerstyle">
+        <div class="col-md-6 ">
+            <h5>
+                COPYRIGHT © 2018 SIMON GAME, IT'S SUPPLIERS OR LICENSORS. ALL RIGHTS RESERVED.
+            </h5>
+        </div>
+
+        <div class="col-md-6 footertext">
+            <h5>Created By Megan Smith</h5>
+        </div>
+    </div>
+   
+</footer> 
+</body>
+</html>
+
+<!--- end of HTML--->

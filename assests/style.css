@@ -1,0 +1,572 @@
+body{
+    background-color: #89b3d6;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* big circle (game board)
+-----------*/
+
+#big{
+    box-shadow: 0 20px 22px 0 rgba(0.9,0.9,0.4,0.7), 0 16px 20px 0 rgba(0.20,0.20,0.20,0.40);
+    float: left;
+    position: relative;
+    width: 700px;
+    height: 700px;
+    top: 50%;
+    left: 28%;
+    border: 3px solid white;
+    border-radius: 50%;  
+    border-width: 10px;
+    border-color: red rgb(170, 50, 220, .6) green;
+    background-color: #525459;
+    z-index: 1;
+}
+
+
+/*---------------
+coloured buttons*/
+
+.circle{
+    z-index: 2;
+    margin: 50px;
+    float: left;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#yellow{
+    background-color: yellow;
+    z-index: 2;
+    left: 70%;
+    top: 37%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+#yellow:active {
+    box-shadow:  0 3px #848991 ;
+    transform: translateY(2px);
+}
+#pink{
+    background-color: pink;
+    z-index: 2;
+    top: 8%;
+    left: 52%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+    margin-right: 400px;
+}
+#pink:active {
+    box-shadow:  0 3px #848991;
+    transform: translateY(2px);
+}
+
+#green{
+    background-color: darkgreen;
+    z-index: 2;
+    left: 50%;
+    top: 65%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+#green:active {
+    box-shadow:  0 3px #848991;
+    transform: translateY(2px);
+}
+#orange{
+    background-color: orange;
+    z-index: 4;
+    top: 8%;
+    left: 20%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+#orange:active {
+    box-shadow:  0 3px #848991;
+    transform: translateY(2px);
+}
+#purple{
+    background-color: purple;
+    z-index: 2;
+    left: 20%;
+    top: 65%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+#purple:active {
+    box-shadow:  0 3px #848991;
+    transform: translateY(2px);
+}
+#blue{
+    background-color: blue;
+    z-index: 2;
+    left: 10px;
+    top: 37%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+#blue:active {
+    box-shadow:  0 3px #848991;
+    transform: translateY(2px);
+}
+
+/*-----------------
+control buttons*/
+
+#start, #mode, #reset{
+    text-align: center;
+    color: white;
+    bottom: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#show-rounds{
+    margin-left: 40%;
+    text-align: center;
+    color: white;
+    width: 50px;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+.controls{
+    background-color: #d689c0;
+    position: absolute;
+    top: 500px;
+    margin-left: 100px;
+    margin-top: 100px;
+    border: 3px solid white;
+	width:200px;
+	height:200px;
+	top:125px;
+    left: 120px;
+	border-radius:50%;
+	z-index: 12;
+}
+
+.title{
+    margin-top: 10%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.inline{
+    display: inline-block;
+    vertical-align: middle;
+    left: 40px;
+}
+
+.display{
+    border: 1px solid white;
+    height: 30px;
+    width: 40px;
+    left: 20%;
+    color: black;
+    border-radius: 10px;
+    font-size: 26px;
+    background-color: #525459;
+}
+
+.heading{
+    text-align: center;
+    font-size: 18px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*footer
+------------*/
+
+.footerstyle{
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+}
+
+/*modal
+----------*/
+
+.glyphicon-info-sign {
+  background-color:  #89b3d6;
+  border: none;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 20px; 
+  cursor: pointer; 
+}
+
+.modal-header{
+    color: black;
+    background-color: #c8f442;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.modal-body{
+    color: black;
+    background-color: #f44271;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.modal-footer{
+    color: white;
+    background-color: #42c2f4;
+}
+
+/* large screen sizes
+---------------------*/
+
+@media screen and (min-width: 1000px) {
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+   #big{
+      width: 700px;
+      height: 700px;
+   }
+   #controls{
+      width: 250px;
+      height: 250px;
+  }
+#pink{
+    background-color: pink;
+    z-index: 2;
+    top: 8%;
+    left: 52%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+    margin-right: 400px;
+}
+#blue{
+    background-color: blue;
+    z-index: 2;
+    left: 10px;
+    top: 37%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+#purple{
+    background-color: purple;
+    z-index: 2;
+    left: 20%;
+    top: 65%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+#orange{
+    background-color: orange;
+    z-index: 4;
+    top: 8%;
+    left: 20%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+#yellow{
+    background-color: yellow;
+    z-index: 2;
+    left: 70%;
+    top: 37%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+#green{
+    background-color: darkgreen;
+    z-index: 2;
+    left: 50%;
+    top: 65%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+  #start, #mode, #reset{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+     }
+
+
+.display{
+    border: 1px solid white;
+    color: black;
+    height: 30px;
+    width: 40px;
+    left: 20%;
+    background-color: #525459;
+    border-radius: 10px;
+    font-size: 26px;
+}
+}
+
+/*medium screen sizes
+---------------------*/
+
+@media screen and (max-width: 800px) {
+  .circle {
+    width: 15%;
+    height: 15%;
+  }
+  #big{
+      width: 600px;
+      height: 600px;
+      left: 0;
+      top: 5%;
+  }
+ .controls {
+    background-color: #d689c0;
+    position: absolute;
+    top: 15%;
+    left: 13%;
+    border: 3px solid white;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    z-index: 12;
+}
+  
+#start, #mode, #reset{
+    text-align: center;
+    color: white;
+    left: -20%;
+    font-family: sans-serif;
+}
+     
+.title{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.display{
+    border: 0.5px solid white;
+    color: black;
+    font-family: sans-serif;
+    height: 20px;
+    background-color: #525459;
+    width: 20px;
+    font-size: 15px;
+}
+
+.heading{
+    font-family: sans-serif;
+}
+
+#pink{
+    background-color: pink;
+    z-index: 2;
+    top: 4%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+    margin-right: 400px;
+}
+
+#blue{
+    background-color: blue;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+
+#purple{
+    background-color: purple;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+
+#orange{
+    background-color: orange;
+    z-index: 4;
+    top: 4%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+
+#yellow{
+    background-color: yellow;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+
+#green{
+    background-color: darkgreen;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+
+ #show-rounds{
+    margin-left: 40%;
+    text-align: center;
+    color: white;
+    width: 50px;
+    vertical-align: middle;
+    height: 30px;
+    font-size: 150%;
+    line-height: 30px;
+    white-space: nowrap;
+}
+}
+
+/*small screens
+------------------*/
+
+@media screen and (max-width: 500px) {
+  .circle {
+    width: 15%;
+    height: 15%;
+  }
+#big{
+    width: 350px;
+    height: 350px;
+    left: -5%;
+    top: 5%;
+ }
+  
+.controls {
+    background-color: #d689c0;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    border: 3px solid white;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    z-index: 12;
+}
+  
+#start, #mode, #reset{
+    text-align: center;
+    color: white;
+    left: -20%;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+     
+.title{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.display{
+    border: 0.5px solid white;
+    color: black;
+    background-color: #525459;
+    font-family: sans-serif;
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+}
+
+.heading{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+#pink{
+    background-color: pink;
+    z-index: 2;
+    top: -10%;
+    left: 43%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+    margin-right: 400px;
+}
+
+#blue{
+    background-color: blue;
+    z-index: 2;
+    left: -10%;
+    top: 90px;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+
+#purple{
+    background-color: purple;
+    z-index: 2;
+    left: 15%;
+    top: 62%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+
+#orange{
+    background-color: orange;
+    z-index: 4;
+    top: -10%;
+    left: 50px;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+
+#yellow{
+    background-color: yellow;
+    z-index: 2;
+    top: 90px;
+    left: 65%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+
+#green{
+    background-color: darkgreen;
+    z-index: 2;
+    top: 62%;
+    left: 43%;
+    cursor: pointer;
+    box-shadow:  0 6px #848991;
+}
+
+ #show-rounds{
+    margin-left: 35%;
+    text-align: center;
+    color: white;
+    width: 50px;
+    vertical-align: middle;
+    height: 30px;
+    font-size: 150%;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+.footerstyle{
+    bottom: 0px;
+    left: 10px;
+    position: fixed;
+}
+
+.glyphicon-info-sign {
+    background-color:  #89b3d6;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 20px; 
+    cursor: pointer; 
+}
+
+.modal-body{
+    font-family: sans-serif;
+    background-color: #f44271;
+}
+
+.modal-header{
+    font-family: sans-serif;
+    background-color: #c8f442;
+}
+
+.modal-footer{
+    background-color: #42c2f4;
+}
+}
+
+
+/*end of CSS*/
